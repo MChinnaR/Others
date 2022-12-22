@@ -1,0 +1,11 @@
+server:
+  port: 9292
+spring:
+  application:
+    name: CONFIG_SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MChinnaR/MicroServiceComponents
+          clone-on-start: true

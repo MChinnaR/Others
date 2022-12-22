@@ -1,0 +1,9 @@
+server:
+  port: 9293
+spring:
+  application:
+    name: CONFIG_CLIENT
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:9292

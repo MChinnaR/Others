@@ -1,0 +1,23 @@
+package com.ms1.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ms1.model.UserData;
+import com.ms1.service.UserService;
+
+@RestController
+@RequestMapping("/ms1")
+public class Controller {
+
+	@Autowired
+	private UserService service;
+
+	@RequestMapping("/user")
+	public UserData getUserData(@RequestParam int profileId) {
+
+		return service.getUserData(profileId);
+	}
+}

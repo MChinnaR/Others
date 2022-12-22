@@ -1,0 +1,22 @@
+package com.ms1.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.ms1.model.UserData;
+import com.ms1.repository.UserRepository;
+
+@org.springframework.stereotype.Service
+public class UserService {
+
+	@Autowired
+	private UserRepository repo;
+
+	public UserData getUserData(int profileId) {
+		return repo.findById(profileId).get();
+	}
+
+	public void insertData(UserData data) {
+		repo.save(data);
+	}
+
+}

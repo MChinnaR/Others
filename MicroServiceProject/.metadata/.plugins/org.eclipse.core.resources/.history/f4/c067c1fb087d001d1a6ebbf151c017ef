@@ -1,0 +1,6 @@
+package com.ms1.service;
+
+@org.springframework.stereotype.Service
+public class UserService {
+
+}

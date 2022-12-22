@@ -1,0 +1,20 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: MICROSERVICE_TWO
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservicetwo?createDatabaseIfNotExist=true&useSSL=true
+    username: root
+    password: pass@word1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER

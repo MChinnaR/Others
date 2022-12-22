@@ -1,0 +1,13 @@
+package com.ms1.service;
+
+import com.ms1.model.UserData;
+
+@org.springframework.stereotype.Service
+public class UserService {
+
+	public UserData getUserData(int profileId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

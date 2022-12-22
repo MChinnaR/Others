@@ -1,0 +1,15 @@
+package com.ms1.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table
+public class UserData {
+
+	private int profileId;
+	private String name;
+	private int depId;
+	
+
+}

@@ -1,0 +1,5 @@
+package com.ms1.model;
+
+public class UserDetails {
+
+}
